@@ -21,11 +21,11 @@
             <form action="https://sd.keepcalms.com/i/keep-calm-wait-and-see.png">
 
                 <h3 class="h2">First Name</h3>
-                <input type="text" placeholder="Enter first name" style="width: 100%;">
+                <input type="text" id="input-boxes" style="width: 100%;" placeholder="Enter first name">
 
 
                 <h3 class="h2">Last Name</h3>
-                <input type="text" placeholder="Enter last name" style="width: 100%;">
+                <input type="text" class="input-boxes" placeholder="Enter last name">
 
 
                 <h3 class="h2">Gender</h3>
@@ -35,7 +35,7 @@
                 <label for="female">
                     <input type="radio" name = "gender" id="female">Female                    
                 </label><br>
-                <label for="2spirit">
+                <label for="spiritual">
                     <input type="radio" name = "gender" id="spiritual">Spiritual                    
                 </label><br>
                 <label for="other">
@@ -44,17 +44,17 @@
 
 
                 <h3 class="h2">E-mail</h3>
-                <input type="text" placeholder="Enter your E-mail" style="width: 100%;">
+                <input type="text" class="input-boxes" placeholder="Enter your E-mail">
 
 
                 <h3 class="h2">Age</h3>
-                <input type="number" placeholder="Select your age" style="width: 100%;">
+                <input type="number" class="input-boxes" placeholder="Select your age">
 
 
                 <h3 class="h2">Country of residence</h3>
                 <div class="country">
                     <!--can add style= "width:200px" in the CSS-->
-                    <select style="width: 100%;">
+                    <select class="input-boxes">
                         <option value="0">Select country:</option>
                         <option value="1">England</option>
                         <option value="2">Wales</option>
@@ -64,43 +64,97 @@
                 </div>
 
                 <h3 class="h2">Locations you can travel to</h3>
+
+
+                <div>
+                    <input type="checkbox" id="England, Silverstone" name="England, Silverstone">
+                    <label for="England, Silverstone">England, Silverstone</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="England, Brands Hatch" name="England, Brands Hatch">
+                    <label for="England, Brands Hatch">England, Brands Hatch</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Scotland, Knockhill" name="Scotland, Knockhill">
+                    <label for="Scotland, Knockhill">Scotland, Knockhill</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Scotland, Ingliston" name="Scotland, Ingliston">
+                    <label for="Scotland, Ingliston">Scotland, Ingliston</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Wales, Angelsey" name="Wales, Angelsey">
+                    <label for="Wales, Angelsey">Wales, Angelsey</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Wales, Pembrey" name="Wales, Pembrey">
+                    <label for="Wales, Pembrey">Wales, Pembrey</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="N.I, Bishopscourt" name="N.I, Bishopscourt">
+                    <label for="N.I, Bishopscourt">N.I, Bishopscourt</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="N.I, Monello Park" name="N.I, Monello Park">
+                    <label for="N.I, Monello Park">N.I, Monello Park</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="ROI, Phoenix Park" name="ROI, Phoenix Park">
+                    <label for="ROI, Phoenix Park">ROI, Phoenix Park</label>
+                </div>
+
+                <!--
+                <label for="loving">
+                    <input id="loving" type="checkbox" name="personality"> Loving
+                </label>
+            -->
+
+
+
+                <!---
                 <label for="england-silverstone" class="locations">
-                    <input type="checkbox" name="travel" id="england"> England, Silverstone
+                    <input type="checkbox" name="england-silverstone" id="england-silverstone"> England, Silverstone
                 </label><br>
                 <label for="england-brands-hatch">
-                    <input type="checkbox" name="travel" id="england"> England, Brands Hatch
+                    <input type="checkbox" name="travel" id="england-brands-hatch"> England, Brands Hatch
                 </label><br>
                 <label for="scotland-knockhill">
-                    <input type="checkbox" name="travel" id="england"> Scotland, Knockhill
+                    <input type="checkbox" name="travel" id="scotland-knockhill"> Scotland, Knockhill
                 </label><br>
                 <label for="soctland-ingliston">
-                    <input type="checkbox" name="travel" id="england"> Scotland, Ingliston
+                    <input type="checkbox" name="travel" id="soctland-ingliston"> Scotland, Ingliston
                 </label><br>
                 <label for="wales-angelsey">
-                    <input type="checkbox" name="travel" id="england"> Wales, Angelsey
+                    <input type="checkbox" name="travel" id="wales-angelsey"> Wales, Angelsey
                 </label><br>
                 <label for="wales-pembrey">
-                    <input type="checkbox" name="travel" id="england"> Wales, Pembrey
+                    <input type="checkbox" name="travel" id="wales-pembrey"> Wales, Pembrey
                 </label><br>
                 <label for="northern-ireland-bishopscourt">
-                    <input type="checkbox" name="travel" id="england"> N.I, Bishopscourt
+                    <input type="checkbox" name="travel" id="northern-ireland-bishopscourt"> N.I, Bishopscourt
                 </label><br>
                 <label for="northern-ireland-mondello-park">
-                    <input type="checkbox" name="travel" id="england"> N.I, Monello Park
+                    <input type="checkbox" name="travel" id="northern-ireland-mondello-park"> N.I, Monello Park
                 </label><br>
                 <label for="ireland-phoenix-park">
-                    <input type="checkbox" name="travel" id="england"> ROI, Phoenix Park
+                    <input type="checkbox" name="travel" id="ireland-phoenix-park"> ROI, Phoenix Park
                 </label>
+
+            -->
+
+
 
 
 
                 <h3 class="h2">Why you should be the winner</h3>
                 <label>
-                    <textarea name="why-win" id="text-box"  style="width: 100%;" placeholder=" Why I should be the winner... "></textarea>
+                    <textarea name="why-win" class = "input-boxes" placeholder=" Why I should be the winner... "></textarea>
                 </label>
                 <br>
 
-                <button type="submit" style="width: 100%;">Click to submit your entry </button>
+                <button type="submit" class="input-boxes">Click to submit your entry </button>
+
+
 
 
             </form>

@@ -1,62 +1,70 @@
-body {
-    margin: 0;
-    background: url(https://www.autocar.co.uk/sites/autocar.co.uk/files/images/car-reviews/first-drives/legacy/jump-wrc-testing-0050.jpg);
-    /*background: linear-gradient(blue yellow green);
+        body {
+            margin: 0;
+            background: url(https://www.autocar.co.uk/sites/autocar.co.uk/files/images/car-reviews/first-drives/legacy/jump-wrc-testing-0050.jpg);
+            /*background: linear-gradient(blue yellow green);
     */
-    background-position: top center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.container {
-    width: 100vw;
-    height: 100vh;
-    font-weight: bold;
-    font-size: 20px;
-    display: grid;
-    grid-template-columns: 0.2fr 0.6fr 0.2fr;
-    grid-template-rows: 135px 1fr;
-    border: 0px solid black;
-}
-
-.container {
-    border: 0px solid red;
-}
-
-.header {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    border: 0px solid rgb(12, 226, 40);
-}
-
-.left-column {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    border: 0px solid rgb(232, 248, 5);
-}
-
-.right-column {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    border: 0px solid rgb(0, 0, 0);
-}
-
-.centre-column {
-    padding-left: 10%;
-    padding-right: 10%;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    border: 0px solid red;
-    min-width: 250px;
-    background-color: rgba(187, 187, 187, 0.726);
-    border-radius: 20px;
-}
-
-.h3 {
-    font-size: larger;
-}
-
-.header {
-    text-align: center;
-}
+            background-position: top center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .container {
+            width: 100vw;
+            height: 100vh;
+            font-weight: bold;
+            font-size: 20px;
+            display: grid;
+            grid-template-columns: 0.2fr 0.6fr 0.2fr;
+            grid-template-rows: 135px 1fr;
+            border: 3px solid black;
+        }
+        
+        .container {
+            border: 3px solid red;
+        }
+        
+        .header {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            border: 3px solid rgb(12, 226, 40);
+        }
+        
+        .left-column {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            border: 3px solid rgb(232, 248, 5);
+        }
+        
+        .right-column {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            border: 3px solid rgb(0, 0, 0);
+        }
+        
+        .centre-column {
+            margin-left: 10%;
+            margin-right: 10%;
+            padding-left: 10%;
+            padding-right: 10%;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            border: 3px solid red;
+            /*max-width: 500px;
+            Using this stops it from remaining in the centre
+            */
+            background-color: rgba(187, 187, 187, 0.726);
+            border-radius: 20px;
+        }
+        
+        .h3 {
+            font-size: larger;
+        }
+        
+        .header {
+            text-align: center;
+        }
+        
+        #input-boxes {
+            width: 100%;
+        }

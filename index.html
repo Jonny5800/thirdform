@@ -1,181 +1,181 @@
 <html>
+	<head>
+		<title>2nd Car Compeiion Form</title>
+		<link rel="stylesheet" href="thirdform.css" />
+	</head>
 
-<head>
-    <title> 2nd Car Compeiion Form</title>
-    <link rel="stylesheet" href="thirdform.css">
-</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1>Free track experience competition form</h1>
+				<h2>Fill the form for a chance to win</h2>
+			</div>
+			<div class="flex">
+				<div class="centre-column">
+					<!-- Everything in the centre-->
+					<form action="index.html" onsubmit="runForm(event)">
+						<h3 class="h2">First Name</h3>
+						<input
+							id="first-name"
+							type="text"
+							class="input-boxes"
+							placeholder="Enter first name"
+						/>
 
+						<h3 class="h2">Last Name</h3>
+						<input
+							type="text"
+							class="input-boxes"
+							placeholder="Enter last name"
+						/>
 
-<body>
-    <div class="container">
-        <div class="header">
-            <h1>Free track experience competition form</h1>
-            <h2>Fill the form for a chance to win</h2>
-        </div>
-        <div class="left-column">
-            <!--left column not in use-->
-        </div>
-        <div class="centre-column">
+						<h3 class="h2">Gender</h3>
+						<div>
+							<input type="radio" name="gender" id="male" />
+							<label for="male">Male</label>
+						</div>
+						<div>
+							<input type="radio" name="gender" id="female" />
+							<label for="female">Female </label>
+						</div>
+						<div>
+							<input type="radio" name="gender" id="spiritual" />
+							<label for="spiritual">Spiritual</label>
+						</div>
 
-            <!-- Everything in the centre-->
-            <form action="https://sd.keepcalms.com/i/keep-calm-wait-and-see.png">
+						<div>
+							<input type="radio" name="gender" id="other" />
+							<label for="other">Other</label>
+						</div>
 
-                <h3 class="h2">First Name</h3>
-                <input type="text" id="input-boxes" style="width: 100%;" placeholder="Enter first name">
+						<h3 class="h2">E-mail</h3>
+						<input
+							type="text"
+							class="input-boxes"
+							placeholder="Enter your E-mail"
+						/>
 
+						<h3 class="h2">Age</h3>
+						<input
+							type="number"
+							class="input-boxes"
+							placeholder="Select your age"
+						/>
 
-                <h3 class="h2">Last Name</h3>
-                <input type="text" class="input-boxes" placeholder="Enter last name">
+						<h3 class="h2">Country of residence</h3>
+						<div class="country">
+							<!--can add style= "width:200px" in the CSS-->
+							<select class="input-boxes">
+								<option value="">Select country:</option>
+								<option value="1">England</option>
+								<option value="2">Wales</option>
+								<option value="3">Scotland</option>
+								<option value="4">Northern Ireland</option>
+							</select>
+						</div>
 
+						<h3 class="h2">Locations you can travel to</h3>
 
-                <h3 class="h2">Gender</h3>
-                <label for="male">
-                    <input type="radio" name = "gender" id="male">Male
-                </label><br>
-                <label for="female">
-                    <input type="radio" name = "gender" id="female">Female                    
-                </label><br>
-                <label for="spiritual">
-                    <input type="radio" name = "gender" id="spiritual">Spiritual                    
-                </label><br>
-                <label for="other">
-                    <input type="radio" name = "gender" id="other">Other                    
-                </label>
+						<div>
+							<input
+								type="checkbox"
+								id="silverstone"
+								name="England, Silverstone"
+							/>
+							<label for="silverstone"
+								>England, Silverstone</label
+							>
+						</div>
+						<div>
+							<input
+								type="checkbox"
+								id="brands-hatch"
+								name="England, Brands Hatch"
+							/>
+							<label for="brands-hatch"
+								>England, Brands Hatch</label
+							>
+						</div>
+						<div>
+							<input
+								type="checkbox"
+								id="knockhill"
+								name="Scotland, Knockhill"
+							/>
+							<label for="knockhill">Scotland, Knockhill</label>
+						</div>
+						<div>
+							<input
+								type="checkbox"
+								id="ingliston"
+								name="Scotland, Ingliston"
+							/>
+							<label for="ingliston">Scotland, Ingliston</label>
+						</div>
+						<div>
+							<input
+								type="checkbox"
+								id="angelsey"
+								name="Wales, Angelsey"
+							/>
+							<label for="angelsey">Wales, Angelsey</label>
+						</div>
+						<div>
+							<input
+								type="checkbox"
+								id="pembrey"
+								name="Wales, Pembrey"
+							/>
+							<label for="pembrey">Wales, Pembrey</label>
+						</div>
+						<div>
+							<input
+								type="checkbox"
+								id="bishopscourt"
+								name="N.I, Bishopscourt"
+							/>
+							<label for="bishopscourt">N.I, Bishopscourt</label>
+						</div>
+						<div>
+							<input
+								type="checkbox"
+								name="N.I, Monello Park"
+								id="monello-park"
+							/>
+							<label for="monello-park">N.I, Monello Park</label>
+						</div>
+						<div>
+							<input
+								type="checkbox"
+								name="ROI, Phoenix Park"
+								id="phoenix-park"
+							/>
+							<label for="phoenix-park">ROI, Phoenix Park</label>
+						</div>
 
+						<h3 class="h2">Why you should be the winner</h3>
+						<label>
+							<textarea
+								name="why-win"
+								class="input-boxes"
+								placeholder=" Why I should be the winner... "
+								cols="50"
+								rows="10"
+							></textarea>
+						</label>
 
-                <h3 class="h2">E-mail</h3>
-                <input type="text" class="input-boxes" placeholder="Enter your E-mail">
-
-
-                <h3 class="h2">Age</h3>
-                <input type="number" class="input-boxes" placeholder="Select your age">
-
-
-                <h3 class="h2">Country of residence</h3>
-                <div class="country">
-                    <!--can add style= "width:200px" in the CSS-->
-                    <select class="input-boxes">
-                        <option value="0">Select country:</option>
-                        <option value="1">England</option>
-                        <option value="2">Wales</option>
-                        <option value="3">Scotland</option>
-                        <option value="4">Northern Ireland</option>                    
-                    </select>
-                </div>
-
-                <h3 class="h2">Locations you can travel to</h3>
-
-
-                <div>
-                    <input type="checkbox" id="England, Silverstone" name="England, Silverstone">
-                    <label for="England, Silverstone">England, Silverstone</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="England, Brands Hatch" name="England, Brands Hatch">
-                    <label for="England, Brands Hatch">England, Brands Hatch</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="Scotland, Knockhill" name="Scotland, Knockhill">
-                    <label for="Scotland, Knockhill">Scotland, Knockhill</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="Scotland, Ingliston" name="Scotland, Ingliston">
-                    <label for="Scotland, Ingliston">Scotland, Ingliston</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="Wales, Angelsey" name="Wales, Angelsey">
-                    <label for="Wales, Angelsey">Wales, Angelsey</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="Wales, Pembrey" name="Wales, Pembrey">
-                    <label for="Wales, Pembrey">Wales, Pembrey</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="N.I, Bishopscourt" name="N.I, Bishopscourt">
-                    <label for="N.I, Bishopscourt">N.I, Bishopscourt</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="N.I, Monello Park" name="N.I, Monello Park">
-                    <label for="N.I, Monello Park">N.I, Monello Park</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="ROI, Phoenix Park" name="ROI, Phoenix Park">
-                    <label for="ROI, Phoenix Park">ROI, Phoenix Park</label>
-                </div>
-
-                <!--
-                <label for="loving">
-                    <input id="loving" type="checkbox" name="personality"> Loving
-                </label>
-            -->
-
-
-
-                <!---
-                <label for="england-silverstone" class="locations">
-                    <input type="checkbox" name="england-silverstone" id="england-silverstone"> England, Silverstone
-                </label><br>
-                <label for="england-brands-hatch">
-                    <input type="checkbox" name="travel" id="england-brands-hatch"> England, Brands Hatch
-                </label><br>
-                <label for="scotland-knockhill">
-                    <input type="checkbox" name="travel" id="scotland-knockhill"> Scotland, Knockhill
-                </label><br>
-                <label for="soctland-ingliston">
-                    <input type="checkbox" name="travel" id="soctland-ingliston"> Scotland, Ingliston
-                </label><br>
-                <label for="wales-angelsey">
-                    <input type="checkbox" name="travel" id="wales-angelsey"> Wales, Angelsey
-                </label><br>
-                <label for="wales-pembrey">
-                    <input type="checkbox" name="travel" id="wales-pembrey"> Wales, Pembrey
-                </label><br>
-                <label for="northern-ireland-bishopscourt">
-                    <input type="checkbox" name="travel" id="northern-ireland-bishopscourt"> N.I, Bishopscourt
-                </label><br>
-                <label for="northern-ireland-mondello-park">
-                    <input type="checkbox" name="travel" id="northern-ireland-mondello-park"> N.I, Monello Park
-                </label><br>
-                <label for="ireland-phoenix-park">
-                    <input type="checkbox" name="travel" id="ireland-phoenix-park"> ROI, Phoenix Park
-                </label>
-
-            -->
-
-
-
-
-
-                <h3 class="h2">Why you should be the winner</h3>
-                <label>
-                    <textarea name="why-win" class = "input-boxes" placeholder=" Why I should be the winner... "></textarea>
-                </label>
-                <br>
-
-                <button type="submit" class="input-boxes">Click to submit your entry </button>
-
-
-
-
-            </form>
-
-
-
-
-
-
-
-
-
-
-
-
-        </div>
-        <div class="right-column">
-            <!--right coumn not in use-->
-        </div>
-    </div>
-    <script src="form2script.js"></script>
-</body>
-
+						<button type="submit" class="input-boxes">
+							Click to submit your entry
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script>
+			function runForm(event) {
+				event.preventDefault();
+				console.log("hello. Go and submit the form");
+			}
+		</script>
+	</body>
 </html>
